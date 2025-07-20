@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "ecb2a8dd-7ff5-468b-9a0e-218de034d891",
+		"name": "Wheel_specs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46904753",
+		"_collection_link": "https://khusheranjan.postman.co/workspace/Khushe-Ranjan's-Workspace~6f7565a8-1335-4545-8175-ab990cf6871e/collection/46904753-ecb2a8dd-7ff5-468b-9a0e-218de034d891?action=share&source=collection_link&creator=46904753"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fields\": {\r\n    \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.052)\",\r\n    \"bearingSeatDiameter\": \"130.043 TO 130.068\",\r\n    \"condemningDia\": \"825 (800-900)\",\r\n    \"intermediateWWP\": \"20 TO 28\",\r\n    \"lastShopIssueSize\": \"837 (800-900)\",\r\n    \"rollerBearingBoreDia\": \"130 (+0.0/-0.025)\",\r\n    \"rollerBearingOuterDia\": \"280 (+0.0/-0.035)\",\r\n    \"rollerBearingWidth\": \"93 (+0/-0.250)\",\r\n    \"treadDiameterNew\": \"915 (900-1000)\",\r\n    \"variationSameAxle\": \"0.5\",\r\n    \"variationSameBogie\": \"5\",\r\n    \"variationSameCoach\": \"13\",\r\n    \"wheelDiscWidth\": \"127 (+4/-0)\",\r\n    \"wheelGauge\": \"1600 (+2,-1)\",\r\n    \"wheelProfile\": \"29.4 Flange Thickness\"\r\n  },\r\n  \"formNumber\": \"WHEEL-2025-998\",\r\n  \"submittedBy\": \"user_id_123\",\r\n  \"submittedDate\": \"2025-07-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/forms/wheel-specifications",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post example",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"fields\": {\r\n    \"axleBoxHousingBoreDia\": \"280 (+0.030/+0.052)\",\r\n    \"bearingSeatDiameter\": \"130.043 TO 130.068\",\r\n    \"condemningDia\": \"825 (800-900)\",\r\n    \"intermediateWWP\": \"20 TO 28\",\r\n    \"lastShopIssueSize\": \"837 (800-900)\",\r\n    \"rollerBearingBoreDia\": \"130 (+0.0/-0.025)\",\r\n    \"rollerBearingOuterDia\": \"280 (+0.0/-0.035)\",\r\n    \"rollerBearingWidth\": \"93 (+0/-0.250)\",\r\n    \"treadDiameterNew\": \"915 (900-1000)\",\r\n    \"variationSameAxle\": \"0.5\",\r\n    \"variationSameBogie\": \"5\",\r\n    \"variationSameCoach\": \"13\",\r\n    \"wheelDiscWidth\": \"127 (+4/-0)\",\r\n    \"wheelGauge\": \"1600 (+2,-1)\",\r\n    \"wheelProfile\": \"29.4 Flange Thickness\"\r\n  },\r\n  \"formNumber\": \"WHEEL-2025-998\",\r\n  \"submittedBy\": \"user_id_123\",\r\n  \"submittedDate\": \"2025-07-20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/forms/wheel-specifications",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"forms",
+								"wheel-specifications"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 20 Jul 2025 06:54:25 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "185"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"formNumber\": \"WHEEL-2025-998\",\n        \"submittedBy\": \"user_id_123\",\n        \"submittedDate\": \"2025-07-20\",\n        \"status\": \"Saved\"\n    },\n    \"message\": \"Wheel specification submitted successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/forms/wheel-specifications/?formNumber=WHEEL-2025-998&submittedBy=user_id_123&submittedDate=2025-07-20",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"forms",
+						"wheel-specifications",
+						""
+					],
+					"query": [
+						{
+							"key": "formNumber",
+							"value": "WHEEL-2025-998"
+						},
+						{
+							"key": "submittedBy",
+							"value": "user_id_123"
+						},
+						{
+							"key": "submittedDate",
+							"value": "2025-07-20"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/forms/wheel-specifications/?formNumber=WHEEL-2025-998&submittedBy=user_id_123&submittedDate=2025-07-20",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"forms",
+								"wheel-specifications",
+								""
+							],
+							"query": [
+								{
+									"key": "formNumber",
+									"value": "WHEEL-2025-998"
+								},
+								{
+									"key": "submittedBy",
+									"value": "user_id_123"
+								},
+								{
+									"key": "submittedDate",
+									"value": "2025-07-20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Sun, 20 Jul 2025 07:00:32 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "326"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"formNumber\": \"WHEEL-2025-998\",\n            \"submittedBy\": \"user_id_123\",\n            \"submittedDate\": \"2025-07-20\",\n            \"fields\": {\n                \"condemningDia\": \"825 (800-900)\",\n                \"lastShopIssueSize\": \"837 (800-900)\",\n                \"treadDiameterNew\": \"915 (900-1000)\",\n                \"wheelGauge\": \"1600 (+2,-1)\"\n            }\n        }\n    ],\n    \"message\": \"Filtered wheel specification forms fetched successfully.\",\n    \"success\": true\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8000",
+			"type": "default"
+		}
+	]
+}
