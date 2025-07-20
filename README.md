@@ -8,7 +8,8 @@
 ### Frontend (Flutter):
 1. `cd frontend`
 2. Run: `flutter pub get`
-3. Launch: `flutter run` or use Android Studio
+3. Run: `flutterfire configure`
+4. Launch: `flutter run` or use Android Studio
 
 ---
 
